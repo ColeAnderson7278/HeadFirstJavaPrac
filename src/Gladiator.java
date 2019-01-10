@@ -2,6 +2,7 @@ public class Gladiator {
     private String name;
     private Integer health;
     private Integer strength;
+    public Boolean isDead = false;
 
     public String getName(){
         return name;
@@ -25,6 +26,14 @@ public class Gladiator {
 
     public void setStrength(Integer newStrength) {
         strength = newStrength;
+    }
+
+    public Boolean getIsDead(){
+        return isDead;
+    }
+
+    private void setIsDead(Boolean newDeadStatus){
+        isDead = newDeadStatus;
     }
 
     public void showStats(){
